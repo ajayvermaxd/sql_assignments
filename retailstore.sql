@@ -202,7 +202,7 @@ FROM Products;
 
 -- 4. Retrieve the category with the highest number of products.
 -- Query:-
-SELECT category_id, COUNT(*) AS product_count
+SELECT category_id, COUNT(product_id) AS product_count
 FROM Products
 GROUP BY category_id
 ORDER BY product_count DESC
